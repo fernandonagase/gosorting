@@ -4,7 +4,8 @@ package sorting
 func BubbleSort(array []int) []int {
 	hasSwapped := true
 	iteration := 1
-	sortedArray := array
+	sortedArray := make([]int, len(array))
+	copy(sortedArray, array)
 
 	for iteration < len(sortedArray) && hasSwapped {
 		hasSwapped = false
