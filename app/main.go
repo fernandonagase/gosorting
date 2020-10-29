@@ -9,4 +9,5 @@ func main() {
 
 	fmt.Println("Bubble Sort: ", sorting.BubbleSort(slice))
 	fmt.Println("Insertion Sort: ", sorting.InsertionSort(slice))
+	fmt.Println("Selection Sort: ", sorting.SelectionSort(slice))
 }
