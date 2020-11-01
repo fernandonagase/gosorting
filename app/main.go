@@ -12,4 +12,5 @@ func main() {
 	fmt.Println("Selection Sort: ", sorting.SelectionSort(slice))
 	fmt.Println("Quick Sort: ", sorting.QuickSort(slice))
 	fmt.Println("Merge Sort: ", sorting.MergeSort(slice))
+	fmt.Println("Heap Sort: ", sorting.HeapSort(slice))
 }
