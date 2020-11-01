@@ -11,4 +11,5 @@ func main() {
 	fmt.Println("Insertion Sort: ", sorting.InsertionSort(slice))
 	fmt.Println("Selection Sort: ", sorting.SelectionSort(slice))
 	fmt.Println("Quick Sort: ", sorting.QuickSort(slice))
+	fmt.Println("Merge Sort: ", sorting.MergeSort(slice))
 }
