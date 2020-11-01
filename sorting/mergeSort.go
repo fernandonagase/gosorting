@@ -12,20 +12,15 @@ func MergeSort(array []int) []int {
 
 func mergeSortRecursive(array []int) {
 	size := len(array)
-
-	// se tamanho é 1: retorna
 	if size == 1 {
 		return
 	}
 
 	leftSlice := array[:size / 2]
 	rightSlice := array[size / 2:]
-	// ordenaEsquerda
 	mergeSortRecursive(leftSlice)
-	// ordenaDireita
 	mergeSortRecursive(rightSlice)
 
-	// combina esquerda e direita
 	copy(array, merge(leftSlice, rightSlice))
 }
 
@@ -51,7 +46,7 @@ func merge(left, right []int) (merged []int) {
 	}
 
 	if k < len(right) {
-		copy(array[i:], array[k:])
+		copy(array[i:], right[k:])
 	}
 
 	return array
