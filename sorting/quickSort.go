@@ -1,5 +1,6 @@
 package sorting
 
+// QuickSort sorts an array of integers using the quick sort algorithm
 func QuickSort(array []int) []int {
 	sortedArray := make([]int, len(array))
 	copy(sortedArray, array)
